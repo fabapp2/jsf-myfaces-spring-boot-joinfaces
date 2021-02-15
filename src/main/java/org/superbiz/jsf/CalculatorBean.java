@@ -18,13 +18,16 @@
 */
 package org.superbiz.jsf;
 
-import javax.ejb.EJB;
-import javax.faces.bean.ManagedBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
 
-@ManagedBean
+import javax.faces.view.ViewScoped;
+
+@Component
 public class CalculatorBean {
 
-    @EJB
+    @Autowired
     Calculator calculator;
     private double x;
     private double y;

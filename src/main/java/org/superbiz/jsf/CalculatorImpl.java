@@ -16,9 +16,9 @@
  */
 package org.superbiz.jsf;
 
-import javax.ejb.Stateless;
+import org.springframework.stereotype.Service;
 
-@Stateless
+@Service
 public class CalculatorImpl implements Calculator {
 
     public double add(double x, double y) {
